@@ -8,6 +8,21 @@
 # https://docs.python.org/3.9/library/stdtypes.html?highlight=strings#string-methods
 
 # Write your function here.
+def first_before_second(str, sub1, sub2):
+    return str.rfind(sub1) < str.find(sub2)
+    
+    # idx1 = str.index(sub1)
+    # idx2 = str.index(sub2)
+
+    # try:  
+    #     temp = str.index(sub1, idx2)
+    #     return False
+    # except:
+    #     return True
+
+    # return str.index(sub1) < str.index(sub2)
+
+
 
 
 print(first_before_second("a rabbit jumps joyfully", "a", "j"))

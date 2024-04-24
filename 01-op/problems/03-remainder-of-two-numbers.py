@@ -5,6 +5,8 @@
 # function.
 
 # Write your function here.
+def remainder(first, second):
+    return first % second
 
 
 print(remainder(1, 3))  #> 1
