@@ -2,6 +2,16 @@
 # the whole string afterwards.
 
 # Write your function here.
+def cap_space(str):
+    res = ''
+
+    for char in str:
+        lw = char.lower()
+        if char == lw:
+            res += char
+        else:
+            res += ' ' + lw
+    return res
 
 
 print(cap_space("helloWorld"))     #> "hello world"

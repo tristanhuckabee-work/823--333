@@ -3,6 +3,8 @@
 # string.
 
 # Write your function here.
+def char_count(char, str):
+    return str.count(char)
 
 
 print(char_count("a", "App Academy"))         #> 1

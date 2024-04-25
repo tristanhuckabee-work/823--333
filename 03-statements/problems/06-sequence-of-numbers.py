@@ -15,6 +15,21 @@
 
 # Write your function here.
 # There are hints after the print statements
+def seq_of_numbers(string):
+    string += ' '
+    i = 0
+    curr = 1
+    res = ''
+
+    while i < len(string) - 1:
+        if string[i] != string[i + 1]:
+            res = res + str(curr) + string[i]
+            curr = 1
+        else:
+            curr += 1
+        
+        i += 1
+    return res
 
 
 print(seq_of_numbers("1211"))

@@ -7,11 +7,15 @@ try:
     str = 'hello'
     str[0] = 'm'
     print(str)
+except TypeError:
+    print('\'str\' object does not support item assignment')
 finally:
     print('I happen regardless of any exceptions.')
 
 # Example 2
 try:
     print(x)
+except NameError:
+    print('name \'x\' is not defined')
 finally:
     print('I happen regardless of any exceptions.')

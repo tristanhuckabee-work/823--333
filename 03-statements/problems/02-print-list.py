@@ -3,7 +3,8 @@
 
 # Write your solution here.
 def print_list(list):
-    pass
+    for el in list:
+        print(el)
 
 
 lst1 = [1, 2, 5, 1429]

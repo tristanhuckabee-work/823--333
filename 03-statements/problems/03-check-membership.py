@@ -5,7 +5,11 @@
 
 # Write your solution here.
 def check_membership(guest_name, guest_list):
-    pass
+    try:
+        temp = guest_list.index(guest_name)
+        return True
+    except:
+        return False
     
 guest_list = ["George", "Anthony", "Susan", "Tiffany"]
 print(check_membership("Sally", guest_list))        # False

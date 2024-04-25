@@ -5,6 +5,19 @@
 # from A-F. All alphabetic characters may be uppercase or lowercase.
 
 # Write your function here.
+def is_valid_hex_code(str):
+    accepted = 'ABCDEFabcdef1234567890'
+    if str[0] != '#' or len(str) > 7:
+        return False
+
+    for char in str[1:]:
+        valid = accepted.find(char)
+        if valid == -1:
+            return False
+
+    return True
+
+
 
 
 print(is_valid_hex_code("#CD5C5C"))  #> True

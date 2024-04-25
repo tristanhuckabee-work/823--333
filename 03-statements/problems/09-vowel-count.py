@@ -2,6 +2,13 @@
 # count of how many vowels are in the string.
 
 # Write your solution here.
+def vowel_count(str):
+    vowels = 'aeiou'
+    total = 0
+    for vowel in vowels:
+        total += str.lower().count(vowel)
+
+    return total
 
 
 print(vowel_count("App Academy"))         #> 4
